@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13.1.2016 17:15:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.opiframe.pojos.CourseStudents" table="course_students" catalog="school" optimistic-lock="version">
+        <id name="courseStudentsId" type="java.lang.Integer">
+            <column name="course_students_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="courses" class="com.opiframe.pojos.Courses" fetch="select">
+            <column name="course_id" />
+        </many-to-one>
+        <many-to-one name="students" class="com.opiframe.pojos.Students" fetch="select">
+            <column name="student_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+html body{
+    
+    background-color: lightgray;
+}
+
+.my_container{
+    
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+a{
+    font-size: 25px;
+}
+
+.button_style{
+    
+    margin-top: 8px;
+}
+
+li{
+    margin-bottom: 8px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13.1.2016 17:15:43 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.opiframe.pojos.Students" table="students" catalog="school" optimistic-lock="version">
+        <id name="studentId" type="java.lang.Integer">
+            <column name="student_id" />
+            <generator class="identity" />
+        </id>
+        <property name="studentName" type="string">
+            <column name="student_name" />
+        </property>
+        <set name="courseStudentses" table="course_students" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="student_id" />
+            </key>
+            <one-to-many class="com.opiframe.pojos.CourseStudents" />
+        </set>
+    </class>
+</hibernate-mapping>
