@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
-@ComponentScan("com.opiframe.controllers")
+@ComponentScan("com.opiframe.*")
 @EnableWebMvc 
 public class Config extends WebMvcConfigurerAdapter {
     

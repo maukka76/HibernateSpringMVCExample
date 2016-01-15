@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 13.1.2016 17:15:43 by Hibernate Tools 4.3.1 -->
+<!-- Generated 15.1.2016 12:05:47 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="com.opiframe.pojos.Teachers" table="teachers" catalog="school" optimistic-lock="version">
         <id name="teacherId" type="java.lang.Integer">

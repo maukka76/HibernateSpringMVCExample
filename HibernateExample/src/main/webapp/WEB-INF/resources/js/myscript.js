@@ -5,7 +5,8 @@ $(document).ready(function(){
        var options = {
            type:'GET',
            success:function(data){
-               foobar.innerHTML = data;
+               
+               foobar.innerHTML = data.teacherName;
            },
            error:function(){
                foobar.innerHTML = "Oh no! Something went wrong";

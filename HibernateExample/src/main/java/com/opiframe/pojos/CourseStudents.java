@@ -1,5 +1,5 @@
 package com.opiframe.pojos;
-// Generated 13.1.2016 17:15:42 by Hibernate Tools 4.3.1
+// Generated 15.1.2016 12:05:47 by Hibernate Tools 4.3.1
 
 
 

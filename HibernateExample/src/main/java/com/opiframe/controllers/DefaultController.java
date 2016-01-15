@@ -21,6 +21,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class DefaultController {
     
+    @RequestMapping(value="/login",method=RequestMethod.GET)
+    public String login(){
+        
+        return "login";
+    }
+    
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String index(ModelMap map){
         
@@ -69,12 +75,11 @@ public class DefaultController {
     }
     
     @RequestMapping(value = "/testScript", method = RequestMethod.GET)
-    public @ResponseBody List<String> listAllUsers() {
-        List<String> dummy = new ArrayList();
-        dummy.add("Tadaa");
-        dummy.add("Padaa");
-        dummy.add("FooBar");
-        dummy.add("Trallalaa");
-        return dummy;
+    public @ResponseBody Teachers listAllUsers() {
+        Teachers t = new Teachers();
+        t.setTeacherId(13);
+        t.setTeacherName("Markus Veijola");
+        t.setTeacherPosition("Programming");
+        return t;
     }
 }

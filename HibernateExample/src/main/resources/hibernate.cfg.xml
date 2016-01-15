@@ -12,6 +12,8 @@
     <mapping resource="com/opiframe/pojos/CourseStudents.hbm.xml"/>
     <mapping resource="com/opiframe/pojos/Students.hbm.xml"/>
     <mapping resource="com/opiframe/pojos/Teachers.hbm.xml"/>
+    <mapping resource="com/opiframe/pojos/User.hbm.xml"/>
     <mapping resource="com/opiframe/pojos/Courses.hbm.xml"/>
+    <mapping resource="com/opiframe/pojos/UserRoles.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
